@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "OpenCode TUI plugin that renders fenced code blocks as a borderless box with a language label.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khushal0811/opencode-good-fences.git"
+  },
   "type": "module",
   "exports": {
     "./tui": {
@@ -10,8 +14,17 @@
       "import": "./dist/tui.js"
     }
   },
-  "files": ["dist"],
-  "keywords": ["opencode", "opencode-plugin", "opencode-plugins", "tui", "markdown", "code-blocks"],
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode-plugins",
+    "tui",
+    "markdown",
+    "code-blocks"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "node test/smoke.mjs",
